@@ -14,7 +14,7 @@ const CallToAction = () => {
       { x: "-50%" }, 
       { duration: 30, ease: "linear", repeat: Infinity }
     )
-  }, [])
+  }, [scope, animate])
 
   useEffect(() => {
     if(animation.current) {

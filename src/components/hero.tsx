@@ -33,7 +33,7 @@ const Hero = () => {
       [rightPointerScope.current, { y: 0, x: 140 }, { duration: 0.5 }],
       [rightPointerScope.current, { x: 0, y: [0, -20, 0] }, { duration: 0.5, ease: "easeInOut" }]
     ])
-  }, [])
+  }, [leftDesignAnimate, leftDesignScope, leftPointerAnimate, leftPointerScope, rightDesignAnimate, rightDesignScope, rightPointerAnimate,rightPointerScope])
   return (
     <section className='py-24 overflow-x-clip' style={{
       cursor: `url(${cursorYouImage.src}), auto`
